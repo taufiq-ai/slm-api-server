@@ -1,6 +1,6 @@
 # slm-api-server
 
-A lightweight **Python API server** for running inference on local or cloud-hosted LLMs.
+A lightweight **Python API server** for running inference on local or self-hosted LLMs.
 
 * Loads GGUF-formatted models from the `src/models/` directory (via [llama-cpp-python](https://llama-cpp-python.readthedocs.io/en/latest/)).
 * Exposes a simple `/inference/` endpoint for text generation.
