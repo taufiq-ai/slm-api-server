@@ -10,11 +10,9 @@ from huggingface_hub import hf_hub_download
 load_dotenv()
 logger = structlog.get_logger(__name__)
 
-# Your model repo on Hugging Face
 HF_REPO_ID = os.getenv("HF_REPO_ID", "taufiq-ai/qwen2.5-coder-1.5-instruct-ft")
 HF_MODEL_FILE = os.getenv("HF_MODEL_FILE")
 LOCAL_MODEL_DIR = os.getenv("DEFAULT_MODEL_DIR")
-
 
 SAVE_DIR = Path(LOCAL_MODEL_DIR)
 SAVE_DIR.mkdir(parents=True, exist_ok=True)
